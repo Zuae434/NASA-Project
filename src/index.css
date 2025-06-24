@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  -webkit-appearance: none;
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(90deg, #87259c 0%, #f0a3e4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+  .nav-gradient {
+    background: linear-gradient(
+      90deg,
+      rgba(15, 12, 41, 0) 0%,
+      rgba(48, 43, 99, 0) 50%,
+      rgba(36, 36, 62, 0) 100%
+    );
+    backdrop-filter: blur(2px);
+  }
+  .button-box-shadow {
+    box-shadow: 0px 2px 25px 0px rgba(216, 180, 254, 0.75);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
